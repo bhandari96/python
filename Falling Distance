@@ -1,0 +1,15 @@
+# This program will calculate the Falling Distance
+
+GRAVITY = 9.8       #Constant
+
+def falling_distance(fallingTime):
+    distance = (1 / 2) * 9.8 * (fallingTime ** 2)
+    print(format(distance, '9.2f'), 'meters')
+    return distance
+
+def main():
+    print ( "....Falling Distance...")
+    for currentTime in range(1, 11):
+        falling_distance(currentTime)
+
+main(
