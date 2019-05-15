@@ -1,0 +1,18 @@
+# Santosh Bhandari
+# Chapter 4 Programming exercises
+
+# This program is to collect the total number of bugs
+
+def main():
+
+    totalDays = 5
+    totalnoOfBugs = 0
+
+    for currentDay in range (1, totalDays +1):
+        bugsCollected = int (input (" Bugs collected on day " + \
+                             str (currentDay ) + ": " ))
+        totalnoOfBugs += bugsCollected
+    print ( "\n The total number of bugs collected for", totalDays,\
+            "days is", totalnoOfBugs )
+
+main()
